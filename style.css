@@ -6,30 +6,71 @@
     font-family: 'IBM Plex Mono', monospace;
     src: url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=IBM+Plex+Mono&display=swap");
 }
+@font-face {
+    font-family: "NotesStyle";
+    src: url(fonts/NotesStyleNbr-Brand.ttf);
+}
 * {
     margin: 0;
     padding: 0;
 }
 body {
     background-color: #333;
+    overflow-x: hidden;
 }
-header {
-    background-color: #a00;
-    padding: 1.5em;
+#redpartheader{
+    background-color: #001220;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header h1 {
+#redpartheader h1 {
     font-family: IBM Plex Mono;
     font-size: 3em;
     padding-left: 0.5em;
     color: #fff;
 }
-header > nav a {
+#redpartheader > nav a {
     font-family: IBM Plex Mono;
     padding: 0.5em;
     text-decoration: none;
     font-size: 2em;
     color: #fff;
+    padding-right: 1em;
+}
+#tunkilogo {
+    width: 10em;
+    margin-left: 4em;
+}
+.homebutton {
+    transition: all .2s ease-in-out;
+}
+.githubbutton {
+    transition: all .2s ease-in-out;
+}
+.homebutton:hover {
+    transform: scale(1.5);
+}
+.githubbutton:hover {
+    transform: scale(1.5);
+}
+#mainimg {
+    width: 100%;
+    display: block;
+}
+.visible {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+#welcometext {
+    font-family: NotesStyle;
+    font-size: 3.2em;
+    font-weight: 900;
+    letter-spacing: 0.4em;
+    background-color: #001220;
+    padding: 1.01em;
+    text-align: center;
+    color: #FCD800;
 }
