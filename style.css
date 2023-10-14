@@ -112,10 +112,10 @@ body {
     font-family: NotesStyle;
     font-size: 3.2em;
     font-weight: 900;
-    letter-spacing: 0.4em;
     background-color: #001220;
     padding: 1.01em;
     text-align: center;
+    align-items: center;
     color: #FCD800;
 }
 .text {
@@ -132,9 +132,8 @@ a:visited {
     color: white;
 }
 .text img {
-    padding-top: 2em;
-    width: 5em;
-    padding-bottom: 0.2em;
+    padding-top: 1em;
+    width: 10em;
     filter: invert(99%) sepia(0%) saturate(7500%) hue-rotate(229deg) brightness(101%) contrast(101%);
 }
 .top-left-date {
@@ -160,4 +159,7 @@ a:visited {
     font-family: NotesStyle;
     font-size: 0.8em;
     vertical-align: 0.2em;
+}
+#trackinfo {
+    font-size: 0.7em;
 }
