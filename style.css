@@ -10,6 +10,7 @@
     font-family: "NotesStyle";
     src: url(fonts/NotesStyleNbr-BrandEdited.ttf);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -121,7 +122,7 @@ body {
 .text {
     color: white;
     font-family: NotesStyle;
-    font-size: 3em;
+    font-size: 30px;
     text-align: center;
     align-items: center;
 }
@@ -135,14 +136,6 @@ a:visited {
     padding-top: 1em;
     width: 10em;
     filter: invert(99%) sepia(0%) saturate(7500%) hue-rotate(229deg) brightness(101%) contrast(101%);
-}
-.top-left-date {
-    color: #fff;
-    font-family: NotesStyle;
-    font-size: 5em;
-    position: absolute;
-    top: 8px;
-    left: 16px;
 }
 .mainimg {
     position: relative;
@@ -162,4 +155,27 @@ a:visited {
 }
 #trackinfo {
     font-size: 0.7em;
+}
+#nordschleifemap {
+    width: 30%;
+}
+@media screen and (max-width: 800px) {
+    .text {
+        overflow-x: visible;
+        font-size: 1em;
+    }
+    #casstill {
+        font-size: 0.5em;
+    }
+    #navbar{
+        background-color: #FCD800;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: -250px;
+        transition: top 0.3s;
+        z-index: 1;
+    }
 }
