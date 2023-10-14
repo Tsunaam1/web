@@ -8,35 +8,66 @@
 }
 @font-face {
     font-family: "NotesStyle";
-    src: url(fonts/NotesStyleNbr-Brand.ttf);
+    src: url(fonts/NotesStyleNbr-BrandEdited.ttf);
 }
 * {
     margin: 0;
     padding: 0;
 }
 body {
-    background-color: #333;
+    background-color: #000b13;
     overflow-x: hidden;
 }
-#redpartheader{
-    background-color: #001220;
+#navbar{
+    background-color: #FCD800;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: -100px;
+    transition: top 0.3s;
+    z-index: 1;
 }
-#redpartheader h1 {
+#navbar h1 {
     font-family: IBM Plex Mono;
     font-size: 3em;
     padding-left: 0.5em;
     color: #fff;
 }
-#redpartheader > nav a {
+#navbar > nav a {
     font-family: IBM Plex Mono;
     padding: 0.5em;
     text-decoration: none;
     font-size: 2em;
     color: #fff;
     padding-right: 1em;
+}
+#navbar > nav img {
+    filter: invert(6%) sepia(22%) saturate(5487%) hue-rotate(182deg) brightness(96%) contrast(102%);
+}
+#navbarstill{
+    background-color: #001220;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbarstill h1 {
+    font-family: IBM Plex Mono;
+    font-size: 3em;
+    padding-left: 0.5em;
+    color: #fff;
+}
+#navbarstill > nav a {
+    font-family: IBM Plex Mono;
+    padding: 0.5em;
+    text-decoration: none;
+    font-size: 2em;
+    color: #fff;
+    padding-right: 1em;
+}
+#navbarstill >nav img {
+    filter: invert(71%) sepia(81%) saturate(522%) hue-rotate(358deg) brightness(103%) contrast(109%);
 }
 #tunkilogo {
     width: 10em;
@@ -45,10 +76,23 @@ body {
 .homebutton {
     transition: all .2s ease-in-out;
 }
+.youtubebutton {
+    padding-bottom: 0.15em;
+    transition: all .2s ease-in-out;
+}
+.steambutton {
+    transition: all .2s ease-in-out;
+}
 .githubbutton {
     transition: all .2s ease-in-out;
 }
 .homebutton:hover {
+    transform: scale(1.5);
+}
+.youtubebutton:hover {
+    transform: scale(1.5);
+}
+.steambutton:hover {
     transform: scale(1.5);
 }
 .githubbutton:hover {
@@ -73,4 +117,47 @@ body {
     padding: 1.01em;
     text-align: center;
     color: #FCD800;
+}
+.text {
+    color: white;
+    font-family: NotesStyle;
+    font-size: 3em;
+    text-align: center;
+    align-items: center;
+}
+.text > a {
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+}
+.text img {
+    padding-top: 2em;
+    width: 5em;
+    padding-bottom: 0.2em;
+    filter: invert(99%) sepia(0%) saturate(7500%) hue-rotate(229deg) brightness(101%) contrast(101%);
+}
+.top-left-date {
+    color: #fff;
+    font-family: NotesStyle;
+    font-size: 5em;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.mainimg {
+    position: relative;
+    text-align: center;
+}
+#cas {
+    color: #f00;
+    font-family: NotesStyle;
+    font-size: 0.8em;
+    vertical-align: 0.2em;
+}
+#casstill {
+    color: #FCD800;
+    font-family: NotesStyle;
+    font-size: 0.8em;
+    vertical-align: 0.2em;
 }
