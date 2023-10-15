@@ -179,3 +179,21 @@ a:visited {
         z-index: 1;
     }
 }
+footer {
+    background-color: #001220;
+    text-align: center;
+    color: white;
+    font-family: NotesStyle;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+#cloudflare {
+    padding: 2em;
+    padding-top: 1em;
+    width: 10em;
+    display: block;
+}
+#poweredbytext {
+    padding-top: 2.5em;
+}
