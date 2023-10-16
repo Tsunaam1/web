@@ -105,7 +105,10 @@
     <div class="text">
       <div id="aboutme">
         <h1>O mně</h1>
-        <p>Zajímá mě tvoření webů, programování, hry a grafický design.</p>
+        <p id="aboutmebeginning">
+          Jmenuji se Le Huy Tung a studuji ve Varnsdorfu.
+        </p>
+        <p>Zajímá mě tvorba webů, programování, hry a grafický design.</p>
         <p>Převázně pracuji ve</p>
         <a href="https://code.visualstudio.com/" target="_blank"
           ><img
@@ -126,19 +129,23 @@
       </div>
       <div id="schools">
         <h1>Školy</h1>
-        <p class="schoolname">Základní škola Josefa Vohradského Šluknov</p>
+        <!-- <p class="schoolname" id="zssluknovname">
+          Základní škola Josefa Vohradského Šluknov
+        </p>
         <a href="https://www.zssluknov.cz" target="_blank"
           ><img
             src="https://media.zivefirmy.cz/logo/b565091f6aa99fecfc34058baa3165.jpg"
             alt="Logo ZŠ Šluknov"
+            class="zssluknovbutton"
             title="Základní škola J. Vohradského Šluknov"
         /></a>
-        <p>2013 — 2022</p>
+        <p>2013 — 2022</p> -->
         <p class="schoolname">VOŠ, SPŠ a SOŠ Varnsdorf</p>
         <a href="https://www.skolavdf.cz/" target="_blank"
           ><img
             src="img/skolavdflogo.svg"
             alt="VOŠ, SPŠ, SOŠ Varnsdorf Logo"
+            class="skolavdfbutton"
             title="VOŠ, SPŠ, SOŠ a Varnsdorf"
             width="160px"
         /></a>
@@ -153,16 +160,19 @@
         />
         <h1>Nordschleife — Touristenfahrten (20,8 km)</h1>
         <p>Alfa Romeo 155 V6 — PB: 07:39.227</p>
-        <p>(Zajezděno v simulátoru)</p>
+        <p>(Naježděno v simulátoru)</p>
         <br />
         <br />
       </div>
     </div>
     <footer>
-      <p id="poweredbytext">Powered by</p>
-      <a href="https://www.cloudflare.com/" target="_blank"
-        ><img src="img/Cloudflare logo.svg" id="cloudflare"
-      /></a>
+      <div class="cloudflarefooter">
+        <p id="poweredbytext">Powered by</p>
+        <a href="https://www.cloudflare.com/" target="_blank"
+          ><img src="img/Cloudflare logo.svg" id="cloudflare"
+        /></a>
+      </div>
+      <div id="copyright"><p>&copy;2023 Le Huy Tung</p></div>
     </footer>
   </body>
 </html>
