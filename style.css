@@ -212,6 +212,9 @@ a:visited {
         overflow-x: visible;
         font-size: 1em;
     }
+    #cas {
+        font-size: 0.5em;
+    }
     #casstill {
         font-size: 0.5em;
     }
