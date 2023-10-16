@@ -87,6 +87,12 @@ body {
 .githubbutton {
     transition: all .2s ease-in-out;
 }
+.vscodebutton {
+    transition: all .2s ease-in-out;
+}
+.paintnetbutton {
+    transition: all .2s ease-in-out;
+}
 .homebutton:hover {
     transform: scale(1.5);
 }
@@ -97,6 +103,12 @@ body {
     transform: scale(1.5);
 }
 .githubbutton:hover {
+    transform: scale(1.5);
+}
+.vscodebutton:hover {
+    transform: scale(1.5);
+}
+.paintnetbutton:hover {
     transform: scale(1.5);
 }
 #mainimg {
@@ -126,11 +138,12 @@ body {
     text-align: center;
     align-items: center;
     background-color: #000b13;
+    
 }
-.text > h1 {
+.text  h1 {
     padding-top: 1em;
 }
-.text > a {
+.text a {
     text-decoration: none;
 }
 a:visited {
@@ -138,7 +151,6 @@ a:visited {
 }
 .text img {
     padding-top: 1em;
-    width: 10em;
     filter: invert(99%) sepia(0%) saturate(7500%) hue-rotate(229deg) brightness(101%) contrast(101%);
 }
 .mainimg {
@@ -157,11 +169,28 @@ a:visited {
     font-size: 0.8em;
     vertical-align: 0.2em;
 }
+#aboutme img {
+    padding-bottom: 2em;
+}
+#schools {
+    background-color: #001422;
+}
+#schools img {
+    filter: none;
+    padding-left: 1em;
+    padding-right: 1em; 
+}
+.schoolname {
+    padding-top: 2em;
+}
+#schoolsfooter {
+    padding-bottom: 2em;
+}
 #trackinfo {
     font-size: 0.7em;
 }
 #nordschleifemap {
-    width: 30%;
+    width: 600px;
 }
 @media screen and (max-width: 800px) {
     .text {
@@ -194,10 +223,14 @@ footer {
 }
 #cloudflare {
     padding: 2em;
-    padding-top: 1em;
+    padding-top: 2em;
     width: 10em;
     display: block;
 }
 #poweredbytext {
-    padding-top: 2.5em;
+    padding-top: 3em;
+}
+#aboutme img {
+    padding-left: 1em;
+    padding-right: 1em;
 }

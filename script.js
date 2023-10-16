@@ -6,7 +6,7 @@ function scrollFunction() {
   if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-8em";
+    document.getElementById("navbar").style.top = "-15em";
   }
 } 
 
