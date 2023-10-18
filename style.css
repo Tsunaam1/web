@@ -200,8 +200,19 @@ a:visited {
 #zssluknovname {
     padding-top: 0px;
 }
-#schoolsfooter {
+.textfooter {
     padding-bottom: 2em;
+}
+.projectname {
+    padding-top: 1em;
+}
+#elektronika60 img {
+    padding-top: 0px;
+    width: 8em;
+    filter: none;
+}
+#records {
+    background-color: #000e18;
 }
 #trackinfo {
     font-size: 0.7em;
