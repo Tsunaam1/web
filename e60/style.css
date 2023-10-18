@@ -1,0 +1,49 @@
+@font-face {
+    font-family: IBMPlexMono;
+    src: url(font/IBMPlexMono-Regular.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #050505;
+    overflow-x: hidden;
+    text-align: center;
+}
+#navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #041404;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#e60logo {
+    width: 12em;
+}
+#tunkilogo {
+    width: 9em;
+    margin-right: 3em;
+    transition: all .3s ease-in-out;
+}
+#tunkilogo:hover {
+    transform: scale(1.25);
+}
+#gameplay {
+    padding-top: 10em;
+}
+#text {
+    font-family: IBMPlexMono;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 5em;
+}
+#text > a {
+    color: rgb(0, 255, 0);
+    text-decoration: none;
+}
+#e60gameplay {
+    width: 80em;
+}
