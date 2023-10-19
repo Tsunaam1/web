@@ -35,10 +35,16 @@ body {
     padding-top: 10em;
     margin-bottom: 1.5em;
 }
+.button {
+    transition: all .6s ease-in-out;
+}
+.button:hover {
+    transform: scale(1.2);
+}
 #text {
     font-family: IBMPlexMono;
     color: rgb(0, 255, 0);
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
     font-size: 2em;
 }
 #text > a {
@@ -48,6 +54,11 @@ body {
 #e60gameplay {
     width: 80em;
 }
+#downloadbutton p {
+    font-family: IBMPlexMono;
+    color: rgb(0, 255, 0);
+    font-size: 1.2em;
+}
 #credit {
     font-family: IBMPlexMono;
     color: rgb(0, 150, 0);
@@ -55,11 +66,25 @@ body {
     margin-bottom: 1.5em;
     font-size: 2em;
 }
-#name {
-    color: rgb(0, 200, 0);
+.name {
+    color: #04fc04;
+}
+#ost h1 {
+    color: rgb(0, 255, 0);
+    font-family: IBMPlexMono;
+    font-size: 5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 @media screen and (max-width: 800px) {
     #e60gameplay {
+        width: 25em;
+    }
+    #ost h1 {
+        font-size: 3em;
+    }
+    #ost iframe {
+        height: 25em;
         width: 25em;
     }
 }
