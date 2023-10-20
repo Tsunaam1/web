@@ -19,6 +19,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 }
 #e60logo {
     width: 12em;
@@ -58,6 +59,7 @@ body {
     font-family: IBMPlexMono;
     color: rgb(0, 255, 0);
     font-size: 1.2em;
+    margin-top: 1em;
 }
 #credit {
     font-family: IBMPlexMono;
