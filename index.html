@@ -84,23 +84,61 @@
         </nav>
       </div>
     </header>
-    <div class="mainimg">
-      <img
-        src="img/nordschleife rb 920.webp"
-        alt="RedBull Formule na Nordschleife trati"
-        id="mainimg"
-      />
-      <!-- <iframe
-        id="mainimg"
-        width="1920"
-        height="778"
-        src="https://www.youtube.com/embed/62-gBecOcfU?autoplay=1&mute=1"
-        title="POV : Nissan GTR GL RACING vs Bmw M4 DEVOTEC / Nordschleife Nurburgring 30.10.17"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe> -->
+    <div class="slideshow-container">
+      <div class="mainimg fade">
+        <div class="numbertext">1 / 2</div>
+        <img
+          src="img/nordschleife rb 920.webp"
+          alt="RedBull Formule na Nordschleife trati"
+          id="mainimg"
+          id="mainimgrb"
+        />
+        <div class="mainimgtext">Red Bull RB16B</div>
+      </div>
+      <div class="mainimg fade">
+        <div class="numbertext">2 / 2</div>
+        <img
+          src="img/nordschleife rx7 veilside.webp"
+          alt="Mazda RX-7 Veilside na Nordschleife trati"
+          id="mainimg"
+        />
+        <div class="mainimgtext">Mazda RX-7 Veilside Fortune</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
+    <script>
+      let slideIndex = 1
+      showSlides(slideIndex)
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n))
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n))
+      }
+
+      function showSlides(n) {
+        let i
+        let slides = document.getElementsByClassName("mainimg")
+        let dots = document.getElementsByClassName("dot")
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "")
+        }
+        slides[slideIndex - 1].style.display = "block"
+        dots[slideIndex - 1].className += " active"
+      }
+    </script>
     <div id="welcometext">v í t e j t e</div>
     <div class="text">
       <div id="aboutme">

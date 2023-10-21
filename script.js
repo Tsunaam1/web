@@ -24,3 +24,4 @@ function aktualizujCas() {
 
 // Spuštění funkce aktualizujCas každou sekundu.
 setInterval(aktualizujCas, 1000);
+
