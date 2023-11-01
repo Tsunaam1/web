@@ -266,11 +266,17 @@ a:visited {
 }
 .projectname {
   padding-top: 1em;
+  font-size: 1.5em;
 }
 #elektronika60 img {
   padding: 1em;
   width: 7em;
   filter: none;
+}
+#ictweb img {
+  padding: 1em;
+  filter: none;
+  width: 7em;
 }
 #programming {
   background-color: #000e18;
