@@ -6,7 +6,7 @@ function scrollFunction() {
   if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-15em";
+    document.getElementById("navbar").style.top = "-17em";
   }
 } 
 
@@ -24,4 +24,3 @@ function aktualizujCas() {
 
 // Spuštění funkce aktualizujCas každou sekundu.
 setInterval(aktualizujCas, 1000);
-
