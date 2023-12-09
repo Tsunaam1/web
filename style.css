@@ -379,13 +379,13 @@ footer {
   font-family: NotesStyle;
 }
 #cloudflare {
-  padding: 2em;
-  padding-top: 2em;
+  padding: 1.5em;
+  padding-top: 1.5em;
   width: 10em;
   display: block;
 }
 #poweredbytext {
-  padding-top: 3em;
+  padding-top: 2.5em;
 }
 #aboutme img {
   padding-left: 1em;
@@ -403,7 +403,7 @@ footer {
 .socialmediaitem {
   cursor: pointer;
   filter: grayscale(1);
-  transition: all 0.5s ease-in;
+  transition: all 0.5s ease-out;
   margin: 0 10px 0 10px;
 }
 .socialmediaitem:hover {
