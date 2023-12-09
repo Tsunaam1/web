@@ -247,9 +247,15 @@ a:visited {
   font-size: 0.8em;
   vertical-align: 0.2em;
 }
+#aboutme {
+  scroll-margin-top: 90px;
+}
 #aboutme img {
   padding-top: 1.5em;
   padding-bottom: 2em;
+}
+#schools {
+  scroll-margin-top: 90px;
 }
 #schools img {
   filter: none;
@@ -268,6 +274,7 @@ a:visited {
 }
 #projects {
   background-color: #000e18;
+  scroll-margin-top: 90px;
 }
 .projectname {
   padding-top: 1em;
@@ -285,21 +292,19 @@ a:visited {
 }
 #programming {
   background-color: #000e18;
+  scroll-margin-top: 90px;
 }
 #programming img {
   padding-bottom: 2em;
+}
+#records {
+  scroll-margin-top: 90px;
 }
 #trackinfo {
   font-size: 0.7em;
 }
 #nordschleifemap {
   width: 600px;
-}
-:target:before {
-  content: "";
-  display: block;
-  height: 90px;
-  padding: -90px 0 0;
 }
 @media screen and (max-width: 800px) {
   body,
@@ -357,32 +362,21 @@ a:visited {
     width: 1em;
   }
 }
-@media screen and (max-width: 494px) {
-  :target:before {
-    content: "";
-    display: block;
-    height: 129.567px;
-    padding: -129.567px 0 0;
-  }
-}
-@media screen and (max-width: 395px) {
-  :target:before {
-    content: "";
-    display: block;
-    height: 213.567px;
-    padding: -213.567px 0 0;
-  }
-}
 footer {
-  background-color: #001220;
-  text-align: center;
   color: white;
   font-family: NotesStyle;
+  background-color: #001d31;
+  padding: 0.5em;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
 }
 .cloudflarefooter {
   justify-content: center;
   text-align: center;
   display: flex;
+  color: white;
+  font-family: NotesStyle;
 }
 #cloudflare {
   padding: 2em;
@@ -400,8 +394,20 @@ footer {
 #copyright {
   background-color: #001d31;
   padding: 1em;
-  text-align: center;
   align-items: center;
+}
+#socialmedia {
+  display: flex;
+  align-items: center;
+}
+.socialmediaitem {
+  cursor: pointer;
+  filter: grayscale(1);
+  transition: all 0.5s ease-in;
+  margin: 0 10px 0 10px;
+}
+.socialmediaitem:hover {
+  filter: none;
 }
 #kraftwerktext {
   color: #bbb;
