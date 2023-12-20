@@ -1,0 +1,70 @@
+body {
+  background-color: #333;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+}
+
+header {
+  margin-top: 5em;
+  text-align: center;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#changelog {
+  color: #0f0;
+}
+
+#gallery {
+  display: grid;
+  margin: 5em 3em 3em;
+  justify-content: center;
+  border: #fff 3px solid;
+  padding: 3em;
+}
+
+#gallery img {
+  width: 25em;
+  transition: all 0.4s ease-in-out;
+}
+
+#galleryitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tvrdafotka:hover {
+  transform: scale(1.5);
+}
+
+#osobniweb {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1300px) {
+  #gallery img {
+    width: 15em;
+  }
+}
+@media screen and (max-width: 830px) {
+  #gallery img {
+    width: 10em;
+  }
+}
+@media screen and (max-width: 580px) {
+  #gallery {
+    grid-template-columns: 1fr;
+  }
+  #galleryitem {
+    display: initial;
+  }
+}/*# sourceMappingURL=style.css.map */

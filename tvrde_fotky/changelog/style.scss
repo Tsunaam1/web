@@ -1,0 +1,23 @@
+@import "../scss/colors.scss";
+@import "../scss/fonts.scss";
+body {
+    background-color: $bodycolor;
+    color: $textcolor;
+    font-family: $couriernew;
+}
+header {
+    margin-top: 5em;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: $kraftwerkgreen;
+}
+#changeloglist {
+    margin: 5em 4em 5em 4em;
+    padding: 3em;
+    border: $textcolor 3px solid;
+}
+#info {
+    color: $kraftwerkgreen;
+}

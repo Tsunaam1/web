@@ -1,0 +1,62 @@
+@import "scss/colors";
+@import "scss/fonts";
+body {
+    background-color: $bodycolor;
+    color: $textcolor;
+    font-family: $couriernew;
+}
+header {
+    margin-top: 5em;
+    text-align: center;
+}
+footer {
+    color: $textcolor;
+    text-align: center;
+}
+a {
+    color: $textcolor;
+    text-decoration: none;
+}
+#changelog {
+    color: $kraftwerkgreen;
+}
+#gallery {
+    display: grid;
+    margin: 5em 3em 3em;
+    justify-content: center;
+    border: $textcolor 3px solid;
+    padding: 3em;
+}
+#gallery img {
+    width: 25em;
+    transition: all 0.4s ease-in-out;
+}
+#galleryitem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tvrdafotka:hover {
+    transform: scale(1.5);
+}
+#osobniweb {
+    font-weight: bold;
+}
+@media screen and (max-width: 1300px) {
+    #gallery img {
+        width: 15em;
+    }
+}
+@media screen and (max-width: 830px) {
+    #gallery img {
+        width: 10em;
+    }
+}
+@media screen and (max-width: 580px) {
+    #gallery {
+        grid-template-columns: 1fr;
+    }
+    #galleryitem {
+        display: initial;
+    }
+}
