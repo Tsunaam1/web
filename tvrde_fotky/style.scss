@@ -39,6 +39,9 @@ a {
 .tvrdafotka:hover {
     transform: scale(1.5);
 }
+#info {
+    color: $kraftwerkgreen;
+}
 #osobniweb {
     font-weight: bold;
 }
@@ -54,6 +57,7 @@ a {
 }
 @media screen and (max-width: 580px) {
     #gallery {
+        text-align: center;
         grid-template-columns: 1fr;
     }
     #galleryitem {
