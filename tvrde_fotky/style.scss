@@ -1,5 +1,6 @@
 @import "scss/colors";
 @import "scss/fonts";
+
 body {
     background-color: $bodycolor;
     color: $textcolor;
@@ -27,6 +28,11 @@ a {
     border: $textcolor 3px solid;
     padding: 3em;
 }
+#spacer {
+    height: 3px;
+    background-color: $textcolor;
+    margin: 6em;
+}
 #gallery img {
     width: 25em;
     transition: all 0.4s ease-in-out;
@@ -39,8 +45,13 @@ a {
 .tvrdafotka:hover {
     transform: scale(1.5);
 }
+#personalfav {
+    border: 10px solid transparent;
+  border-image: $rainbow;
+  border-image-slice: 1;
+}
 #info {
-    color: $kraftwerkgreen;
+    color: $infocolor;
 }
 #osobniweb {
     font-weight: bold;
