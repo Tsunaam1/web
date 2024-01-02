@@ -51,6 +51,11 @@ a {
   border-image: $rainbow;
   border-image-slice: 1;
 }
+#holy {
+    border: 10px solid transparent;
+    border-image: $holycolor;
+    border-image-slice: 1;
+}
 #info {
     color: $infocolor;
 }

@@ -60,6 +60,13 @@ a {
   border-image-slice: 1;
 }
 
+#holy {
+  border: 10px solid transparent;
+  -o-border-image: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(255, 207, 0) 100%);
+     border-image: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(255, 207, 0) 100%);
+  border-image-slice: 1;
+}
+
 #info {
   color: #777;
 }
