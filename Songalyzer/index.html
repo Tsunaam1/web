@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Analyzátor písniček Songalyzer" />
+    <meta name="keywords" content="Songalyzer, Analyzátor písniček" />
+    <meta name="author" content="Le Huy Tung, Tunki" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_2.ico" />
+    <title>Songalyzer</title>
+  </head>
+  <body>
+    <header id="header">
+      <a href="index.html"><img src="img/logo.webp" alt="Logo" id="logo" /></a>
+      <div id="search">
+        <input
+          type="search"
+          name="search"
+          id="searchtracks"
+          placeholder="Hledat.."
+        />
+      </div>
+      <nav>
+        <div id="createplaylist">
+          <div id="playlistclickable">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"
+              />
+            </svg>
+            <p>Vytvořit playlist</p>
+          </div>
+        </div>
+        <div id="authorize">
+          <img src="img/musician.webp" alt="Profilová fotka" />
+          <p>Přihlásit se</p>
+        </div>
+      </nav>
+    </header>
+    <div id="main">
+      <div id="maintext">
+        <h1>Vítejte v Songalyzeru!</h1>
+        <br />
+        <p>
+          Zde si můžete vyhledat písničky ze Spotify a poté si o nich něco
+          zjistit.
+        </p>
+      </div>
+      <div id="playlisttab">
+        <div id="pltabtext"><h1>Váš playlist</h1></div>
+        <div id="playlisttracks"></div>
+      </div>
+      <div id="trackstuff">
+        <div id="tracklist">
+          <div class="track" id="5W3cjX2J3tjhG8zb6u0qHn">
+            <img
+              src="https://i.scdn.co/image/ab67616d00004851b33d46dfa2635a47eebf63b2"
+              alt="Track Img"
+              id="5W3cjX2J3tjhG8zb6u0qHn"
+            />
+            <div>
+              <h3 href="#" class="trackitem" id="5W3cjX2J3tjhG8zb6u0qHn">
+                Harder, Better, Faster, Stronger
+              </h3>
+              <p id="5W3cjX2J3tjhG8zb6u0qHn">Daft Punk</p>
+            </div>
+          </div>
+          <div class="track" id="69kOkLUCkxIZYexIgSG8rq">
+            <img
+              src="https://i.scdn.co/image/ab67616d000048519b9b36b0e22870b9f542d937"
+              alt="Track Img"
+              id="69kOkLUCkxIZYexIgSG8rq"
+            />
+            <div>
+              <h3 href="#" class="trackitem" id="69kOkLUCkxIZYexIgSG8rq">
+                Get Lucky (feat. Pharrell Williams and Nile Rodgers)
+              </h3>
+              <p id="69kOkLUCkxIZYexIgSG8rq">
+                Daft Punk, Pharrell Williams, Nile Rodgers
+              </p>
+            </div>
+          </div>
+          <div class="track" id="1iNeZGJsoC0D7ZyJTdIbDS">
+            <img
+              src="https://i.scdn.co/image/ab67616d000048512ed719bad67261c7bf090c70"
+              alt="Track Img"
+              id="1iNeZGJsoC0D7ZyJTdIbDS"
+            />
+            <div>
+              <h3 href="#" class="trackitem" id="1iNeZGJsoC0D7ZyJTdIbDS">
+                Technologic
+              </h3>
+              <p id="1iNeZGJsoC0D7ZyJTdIbDS">Daft Punk</p>
+            </div>
+          </div>
+          <div class="track" id="0MyY4WcN7DIfbSmp5yej5z">
+            <img
+              src="https://i.scdn.co/image/ab67616d000048518ac778cc7d88779f74d33311"
+              alt="Track Img"
+              id="0MyY4WcN7DIfbSmp5yej5z"
+            />
+            <div>
+              <h3 href="#" class="trackitem" id="0MyY4WcN7DIfbSmp5yej5z">
+                Da Funk
+              </h3>
+              <p id="0MyY4WcN7DIfbSmp5yej5z">Daft Punk</p>
+            </div>
+          </div>
+          <div class="track" id="0oks4FnzhNp5QPTZtoet7c">
+            <img
+              src="https://i.scdn.co/image/ab67616d000048519b9b36b0e22870b9f542d937"
+              alt="Track Img"
+              id="0oks4FnzhNp5QPTZtoet7c"
+            />
+            <div>
+              <h3 href="#" class="trackitem" id="0oks4FnzhNp5QPTZtoet7c">
+                Giorgio by Moroder
+              </h3>
+              <p id="0oks4FnzhNp5QPTZtoet7c">Daft Punk</p>
+            </div>
+          </div>
+          <div class="track" id="5CMjjywI0eZMixPeqNd75R">
+            <img
+              src="https://i.scdn.co/image/ab67616d000048519b9b36b0e22870b9f542d937"
+              alt="Track Img"
+              id="5CMjjywI0eZMixPeqNd75R"
+            />
+            <div>
+              <h3 href="#" class="trackitem" id="5CMjjywI0eZMixPeqNd75R">
+                Lose Yourself to Dance (feat. Pharrell Williams)
+              </h3>
+              <p id="5CMjjywI0eZMixPeqNd75R">Daft Punk, Pharrell Williams</p>
+            </div>
+          </div>
+          <div class="track" id="7LL40F6YdZgeiQ6en1c7Lk">
+            <img
+              src="https://i.scdn.co/image/ab67616d000048512ed719bad67261c7bf090c70"
+              alt="Track Img"
+              id="7LL40F6YdZgeiQ6en1c7Lk"
+            />
+            <div>
+              <h3 href="#" class="trackitem" id="7LL40F6YdZgeiQ6en1c7Lk">
+                Robot Rock
+              </h3>
+              <p id="7LL40F6YdZgeiQ6en1c7Lk">Daft Punk</p>
+            </div>
+          </div>
+          <div class="track" id="0DiWol3AO6WpXZgp0goxAV">
+            <img
+              src="https://i.scdn.co/image/ab67616d00004851b33d46dfa2635a47eebf63b2"
+              alt="Track Img"
+              id="0DiWol3AO6WpXZgp0goxAV"
+            />
+            <div>
+              <h3 href="#" class="trackitem" id="0DiWol3AO6WpXZgp0goxAV">
+                One More Time
+              </h3>
+              <p id="0DiWol3AO6WpXZgp0goxAV">Daft Punk</p>
+            </div>
+          </div>
+          <div class="track" id="7v9Q0dAb9t7h8gJOkcJHay">
+            <img
+              src="https://i.scdn.co/image/ab67616d00004851b33d46dfa2635a47eebf63b2"
+              alt="Track Img"
+              id="7v9Q0dAb9t7h8gJOkcJHay"
+            />
+            <div>
+              <h3 href="#" class="trackitem" id="7v9Q0dAb9t7h8gJOkcJHay">
+                Face to Face
+              </h3>
+              <p id="7v9Q0dAb9t7h8gJOkcJHay">Daft Punk</p>
+            </div>
+          </div>
+          <div class="track" id="2Foc5Q5nqNiosCNqttzHof">
+            <img
+              src="https://i.scdn.co/image/ab67616d000048511d5cf960a92bb8b03fc2be7f"
+              alt="Track Img"
+              id="2Foc5Q5nqNiosCNqttzHof"
+            />
+            <div>
+              <h3 href="#" class="trackitem" id="2Foc5Q5nqNiosCNqttzHof">
+                Get Lucky (Radio Edit) [feat. Pharrell Williams and Nile
+                Rodgers]
+              </h3>
+              <p id="2Foc5Q5nqNiosCNqttzHof">
+                Daft Punk, Pharrell Williams, Nile Rodgers
+              </p>
+            </div>
+          </div>
+          <div class="track" id="3dhjNA0jGA8vHBQ1VdD6vV">
+            <img
+              src="https://i.scdn.co/image/ab67616d000048514718e2b124f79258be7bc452"
+              alt="Track Img"
+              id="3dhjNA0jGA8vHBQ1VdD6vV"
+            />
+            <div>
+              <h3 href="#" class="trackitem" id="3dhjNA0jGA8vHBQ1VdD6vV">
+                I Feel It Coming
+              </h3>
+              <p id="3dhjNA0jGA8vHBQ1VdD6vV">The Weeknd, Daft Punk</p>
+            </div>
+          </div>
+          <div class="track" id="7MXVkk9YMctZqd1Srtv4MB">
+            <img
+              src="https://i.scdn.co/image/ab67616d000048514718e2b124f79258be7bc452"
+              alt="Track Img"
+              id="7MXVkk9YMctZqd1Srtv4MB"
+            />
+            <div>
+              <h3 href="#" class="trackitem" id="7MXVkk9YMctZqd1Srtv4MB">
+                Starboy
+              </h3>
+              <p id="7MXVkk9YMctZqd1Srtv4MB">The Weeknd, Daft Punk</p>
+            </div>
+          </div>
+          <div class="track" id="2cGxRwrMyEAp8dEbuZaVv6">
+            <img
+              src="https://i.scdn.co/image/ab67616d000048519b9b36b0e22870b9f542d937"
+              alt="Track Img"
+              id="2cGxRwrMyEAp8dEbuZaVv6"
+            />
+            <div>
+              <h3 href="#" class="trackitem" id="2cGxRwrMyEAp8dEbuZaVv6">
+                Instant Crush (feat. Julian Casablancas)
+              </h3>
+              <p id="2cGxRwrMyEAp8dEbuZaVv6">Daft Punk, Julian Casablancas</p>
+            </div>
+          </div>
+          <div class="track" id="2VEZx7NWsZ1D0eJ4uv5Fym">
+            <img
+              src="https://i.scdn.co/image/ab67616d00004851b33d46dfa2635a47eebf63b2"
+              alt="Track Img"
+              id="2VEZx7NWsZ1D0eJ4uv5Fym"
+            />
+            <div>
+              <h3 href="#" class="trackitem" id="2VEZx7NWsZ1D0eJ4uv5Fym">
+                Digital Love
+              </h3>
+              <p id="2VEZx7NWsZ1D0eJ4uv5Fym">Daft Punk</p>
+            </div>
+          </div>
+          <div class="track" id="0dEIca2nhcxDUV8C5QkPYb">
+            <img
+              src="https://i.scdn.co/image/ab67616d000048519b9b36b0e22870b9f542d937"
+              alt="Track Img"
+              id="0dEIca2nhcxDUV8C5QkPYb"
+            />
+            <div>
+              <h3 href="#" class="trackitem" id="0dEIca2nhcxDUV8C5QkPYb">
+                Give Life Back to Music
+              </h3>
+              <p id="0dEIca2nhcxDUV8C5QkPYb">Daft Punk</p>
+            </div>
+          </div>
+        </div>
+        <div id="trackinfo">
+          <div id="basicinfo">
+            <div id="imgandplus">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02b189d433480ce72e65ef1f85"
+                alt="TrackInfo Img"
+              />
+              <div id="spotify:track:2Dx4OYlS0zhjSm0z43midb" class="plus">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  id="spotify:track:2Dx4OYlS0zhjSm0z43midb"
+                >
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    id="spotify:track:2Dx4OYlS0zhjSm0z43midb"
+                    d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h1>The Robots - 2009 Remaster</h1>
+            <h3>
+              <a
+                href="https://open.spotify.com/album/6f6u1yQ6fRoeb0bf1BATvU"
+                target="_blank"
+                >The Mix (2009 Remaster)</a
+              >
+            </h3>
+            <h2>
+              <a
+                href="https://open.spotify.com/artist/0dmPX6ovclgOy8WWJaFEUU"
+                target="_blank"
+                >Kraftwerk</a
+              >
+            </h2>
+            <audio controls="">
+              <source
+                src="https://p.scdn.co/mp3-preview/21d914fad050bbf256eb85c9a432e257f64157b4?cid=849b448571b94989858d7a20cebc7306"
+                type="audio/mpeg"
+              />
+              Your browser does not support the audio element.
+            </audio>
+            <!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+            <a
+              href="https://open.spotify.com/track/1hk5mEiqOrhe8xRouriTOC"
+              target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40px"
+                width="40px"
+                version="1.1"
+                viewBox="0 0 168 168"
+              >
+                <path
+                  fill="#1ED760"
+                  d="m83.996 0.277c-46.249 0-83.743 37.493-83.743 83.742 0 46.251 37.494 83.741 83.743 83.741 46.254 0 83.744-37.49 83.744-83.741 0-46.246-37.49-83.738-83.745-83.738l0.001-0.004zm38.404 120.78c-1.5 2.46-4.72 3.24-7.18 1.73-19.662-12.01-44.414-14.73-73.564-8.07-2.809 0.64-5.609-1.12-6.249-3.93-0.643-2.81 1.11-5.61 3.926-6.25 31.9-7.291 59.263-4.15 81.337 9.34 2.46 1.51 3.24 4.72 1.73 7.18zm10.25-22.805c-1.89 3.075-5.91 4.045-8.98 2.155-22.51-13.839-56.823-17.846-83.448-9.764-3.453 1.043-7.1-0.903-8.148-4.35-1.04-3.453 0.907-7.093 4.354-8.143 30.413-9.228 68.222-4.758 94.072 11.127 3.07 1.89 4.04 5.91 2.15 8.976v-0.001zm0.88-23.744c-26.99-16.031-71.52-17.505-97.289-9.684-4.138 1.255-8.514-1.081-9.768-5.219-1.254-4.14 1.08-8.513 5.221-9.771 29.581-8.98 78.756-7.245 109.83 11.202 3.73 2.209 4.95 7.016 2.74 10.733-2.2 3.722-7.02 4.949-10.73 2.739z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div id="details">
+            <div class="box">
+              <h3 id="boxtext">BPM</h3>
+              <h2>122</h2>
+            </div>
+            <div class="box">
+              <h3 id="boxtext">Popularita</h3>
+              <h2>16%</h2>
+            </div>
+            <div class="box">
+              <h3 id="boxtext">Explicitní</h3>
+              <h2>Ne</h2>
+            </div>
+            <div class="box">
+              <h3 id="boxtext">Délka</h3>
+              <h2>8:58</h2>
+            </div>
+            <div class="box">
+              <h3 id="boxtext">Datum vydání</h3>
+              <h2>1991</h2>
+            </div>
+          </div>
+          <div id="albuminfoparent">
+            <div id="albuminfotext">
+              <a
+                href="https://open.spotify.com/album/6f6u1yQ6fRoeb0bf1BATvU"
+                target="_blank"
+                class="albuminfoheader"
+                ><p>The Mix (2009 Remaster)</p></a
+              >
+              <p class="albuminfotext">Počet skladeb: 11</p>
+              <p class="albuminfotext">Popularita: 25%</p>
+            </div>
+            <div id="albuminfo">
+              <a
+                href="https://open.spotify.com/album/6f6u1yQ6fRoeb0bf1BATvU"
+                target="_blank"
+                ><img
+                  src="https://i.scdn.co/image/ab67616d00001e02b189d433480ce72e65ef1f85"
+                  id="albumimg"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <div id="artistinfoparent">
+            <div id="artistinfotext">
+              <a
+                href="https://open.spotify.com/artist/0dmPX6ovclgOy8WWJaFEUU"
+                target="_blank"
+                class="artistinfoheader"
+                ><p>Kraftwerk</p></a
+              >
+              <p class="artistinfotext" id="followers">
+                Počet sledujících: 756909
+              </p>
+              <p class="artistinfotext" id="popularity">Popularita: 51%</p>
+              <p class="artistinfotext">
+                Žánry: dusseldorf electronic, early synthpop, electro,
+                proto-techno, synthpop
+              </p>
+            </div>
+            <div id="artistinfo">
+              <a
+                href="https://open.spotify.com/artist/0dmPX6ovclgOy8WWJaFEUU"
+                target="_blank"
+                ><img
+                  src="https://i.scdn.co/image/ab67616100005174c46999e5afaf35c91cbe652b"
+                  alt="Artist Image"
+                  id="artistimg"
+              /></a>
+            </div>
+          </div>
+          <div id="albumcopyright">
+            <p>© 1991 Elektra Records</p>
+            <p>
+              ℗ 1991 Elektra Records. Marketed by Rhino Entertainment Company, a
+              Warner Music Group Company
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script-browser.js"></script>
+    <footer id="footer">
+      <div id="copyright"><p>&copy; 2024 Le Huy Tung</p></div>
+      <div id="socialmedia">
+        <a href="https://github.com/Tsunaam1/Songalyzer" target="_blank"
+          ><img
+            src="img/github-mark-white.svg"
+            alt="GitHub Logo"
+            title="GitHub"
+            class="socialmediaitem"
+            width="30px"
+        /></a>
+        <a href="https://tunki.pages.dev/" target="_blank"
+          ><img
+            src="img/tunki.webp"
+            alt="Tunki Logo"
+            title="Tunkiho osobní web"
+            class="socialmediaitem"
+            width="50px"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
