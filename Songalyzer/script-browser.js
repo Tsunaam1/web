@@ -90929,7 +90929,7 @@ var request = require("request")
 const APIController = (function () {
   const sidoem = "849b448571b94989858d7a20cebc7306"
   const moedis = "bbba4ac160904b2c9fe63c035cd42b1b"
-  const redirect_uri = "https://tunki.pages.dev/Songalyzer/"
+  const redirect_uri = "http://localhost:5500/"
   function _requestAuthorization() {
     let url = "https://accounts.spotify.com/authorize"
     url += "?client_id=" + sidoem
@@ -90937,7 +90937,7 @@ const APIController = (function () {
     url += "&redirect_uri=" + encodeURI(redirect_uri)
     url += "&show_dialog=true"
     url +=
-      "&scope=user-read-private user-modify-playback-state user-read-playback-position user-library-read streaming user-read-playback-state user-read-recently-played playlist-read-private playlist-modify-public"
+      "&scope=user-read-private user-modify-playback-state user-read-playback-position user-library-read streaming user-read-playback-state user-read-recently-played playlist-read-private playlist-modify-public playlist-modify-private"
     window.location.href = url
   }
   function _getCode() {
@@ -91677,7 +91677,7 @@ const APPController = (function (UICtrl, APICtrl) {
       const trackURI = e.target.id
       const playlistItems = await APICtrl.getPlaylistItems(token)
       console.log(playlistItems.items)
-      sessionStorage.setItem("trackURI", trackURI)
+      sessionStorage.setItem("trackURIPlaylist", trackURI)
       const arrPlaylistTracks = Array.from(playlistItems.items)
       arrPlaylistTracks.forEach((el) => {
         let artists = ""
@@ -91703,7 +91703,7 @@ const APPController = (function (UICtrl, APICtrl) {
     const token = sessionStorage.getItem("accessTok")
     const trackURI = e.target.id
     console.log(trackURI)
-    sessionStorage.setItem("trackURI", trackURI)
+    sessionStorage.setItem("trackURIPlaylist", trackURI)
     function delItfromPlIt() {
       console.log("Finale:", sessionStorage.getItem("trackInPl"))
       APICtrl.deleteItemFromPlaylist(token, trackURI)
@@ -91718,7 +91718,7 @@ const APPController = (function (UICtrl, APICtrl) {
       const trackURI = e.target.id
       const playlistItems = await APICtrl.getPlaylistItems(token)
       console.log(playlistItems.items)
-      sessionStorage.setItem("trackURI", trackURI)
+      sessionStorage.setItem("trackURIPlaylist", trackURI)
       const arrPlaylistTracks = Array.from(playlistItems.items)
       arrPlaylistTracks.forEach((el) => {
         let artists = ""
