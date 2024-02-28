@@ -90929,7 +90929,7 @@ var request = require("request")
 const APIController = (function () {
   const sidoem = "849b448571b94989858d7a20cebc7306"
   const moedis = "bbba4ac160904b2c9fe63c035cd42b1b"
-  const redirect_uri = "http://localhost:5500/"
+  const redirect_uri = "https://tunki.pages.dev/Songalyzer/"
   function _requestAuthorization() {
     let url = "https://accounts.spotify.com/authorize"
     url += "?client_id=" + sidoem
